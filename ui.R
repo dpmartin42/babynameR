@@ -1,6 +1,6 @@
 shinyUI(fluidPage(
   titlePanel("babynameR"),
-
+  
   sidebarLayout(
     sidebarPanel(
       helpText("This is an application to visualize and explore the popularity of babynames provided by the Social Security Administration. Names 
@@ -11,9 +11,9 @@ shinyUI(fluidPage(
       br(),
       
       helpText("Additionally, both male and female names that are similar to the first name in the search sequence will be output below the
-                graph in a table, sorted by popularity at the upper bound indicated in year range. When you change your search criteria, 
-                click the \"Update\" button. Please be patient, as it takes a few seconds to load."),
-
+               graph in a table, sorted by popularity at the upper bound indicated in year range. When you change your search criteria, 
+               click the \"Update\" button. Please be patient, as it takes a few seconds to load."),
+      
       br(),
       
       textInput("name", value = "Mary", label = h4("Name(s)")), 
@@ -39,10 +39,10 @@ shinyUI(fluidPage(
       
       helpText(a("View the code on GitHub", href = "https://github.com/dpmartin42/babynameR", target = "_blank"))
       
-    ),
+      ),
     
     mainPanel(plotOutput("plot", width = "900px", height = "500px"),
-                 
+              
               tabsetPanel(
                 tabPanel('Boys',
                          dataTableOutput("tableBoys")),
@@ -52,5 +52,5 @@ shinyUI(fluidPage(
               
     )
     
-  )
-))
+    )
+  ))
