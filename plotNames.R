@@ -8,6 +8,8 @@
 
 load("data/babynames.rdata")
 
+require(car)
+
 plotNames <- function(inputNames, inputSex, bottomYear, topYear){
   
   bottomYear <- as.numeric(bottomYear)
