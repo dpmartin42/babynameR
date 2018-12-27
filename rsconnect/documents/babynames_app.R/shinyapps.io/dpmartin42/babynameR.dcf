@@ -1,0 +1,13 @@
+name: babynameR
+title: babynameR
+username:
+account: dpmartin42
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 17141
+bundleId: 1785761
+url: https://dpmartin42.shinyapps.io/babynameR/
+when: 1545940218.41616
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: README.md|shinyapps/.DS_Store
